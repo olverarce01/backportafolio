@@ -20,6 +20,10 @@ catch (error){
 app.use(cors());
 app.use(express.json())
 
+app.get('/',function(req,res){
+  res.json({message: 'hello world'})
+})
+
 app.get('/projects', async function(req,res){
   const projects = await Project.find({});
   res.json(projects);
