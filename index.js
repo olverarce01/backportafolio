@@ -76,7 +76,7 @@ app.post('/images/:id/like', async function(req,res){
 });
 
 
-const port = 3001 || process.env.PORT;
+const port = 3000 || process.env.PORT;
 app.listen(port, function(){
   console.log('running on port: ',port);
 })
