@@ -9,7 +9,7 @@ import axios from 'axios';
 const app = express();
 
 try{
-  await mongoose.connect('mongodb://localhost/mipagina', 
+  await mongoose.connect('mongodb://mongo:v4pdF5B7JNkjgo5Wcymv@containers-us-west-3.railway.app:5880', 
   { useNewUrlParser: true});
 }
 catch (error){
